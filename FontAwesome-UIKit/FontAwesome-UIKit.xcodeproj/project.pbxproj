@@ -14,6 +14,10 @@
 		1CCDDC41287ED9FE00521785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CCDDC40287ED9FE00521785 /* Assets.xcassets */; };
 		1CCDDC44287ED9FE00521785 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CCDDC42287ED9FE00521785 /* LaunchScreen.storyboard */; };
 		1CCDDC4C287EDA1000521785 /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1CCDDC4B287EDA1000521785 /* FontAwesome.otf */; };
+		1CCDDC53287F0F8C00521785 /* FontAwesomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCDDC51287F0F8B00521785 /* FontAwesomeTableViewCell.swift */; };
+		1CCDDC54287F0F8C00521785 /* FontAwesomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CCDDC52287F0F8C00521785 /* FontAwesomeTableViewCell.xib */; };
+		1CCDDC5C287FC32A00521785 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCDDC5B287FC32A00521785 /* String+.swift */; };
+		1CCDDC5E287FC34800521785 /* icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCDDC5D287FC34700521785 /* icons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		1CCDDC43287ED9FE00521785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CCDDC45287ED9FE00521785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CCDDC4B287EDA1000521785 /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		1CCDDC51287F0F8B00521785 /* FontAwesomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAwesomeTableViewCell.swift; sourceTree = "<group>"; };
+		1CCDDC52287F0F8C00521785 /* FontAwesomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FontAwesomeTableViewCell.xib; sourceTree = "<group>"; };
+		1CCDDC5B287FC32A00521785 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		1CCDDC5D287FC34700521785 /* icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,36 @@
 		1CCDDC36287ED9FC00521785 /* FontAwesome-UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				1CCDDC50287F0CDF00521785 /* Sources */,
+				1CCDDC4F287F0CD500521785 /* Resources */,
+			);
+			path = "FontAwesome-UIKit";
+			sourceTree = "<group>";
+		};
+		1CCDDC4F287F0CD500521785 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				1CCDDC4B287EDA1000521785 /* FontAwesome.otf */,
+				1CCDDC40287ED9FE00521785 /* Assets.xcassets */,
+				1CCDDC45287ED9FE00521785 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1CCDDC50287F0CDF00521785 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
 				1CCDDC37287ED9FC00521785 /* AppDelegate.swift */,
 				1CCDDC39287ED9FC00521785 /* SceneDelegate.swift */,
 				1CCDDC3B287ED9FC00521785 /* ViewController.swift */,
+				1CCDDC51287F0F8B00521785 /* FontAwesomeTableViewCell.swift */,
+				1CCDDC5B287FC32A00521785 /* String+.swift */,
+				1CCDDC5D287FC34700521785 /* icons.swift */,
 				1CCDDC3D287ED9FC00521785 /* Main.storyboard */,
-				1CCDDC40287ED9FE00521785 /* Assets.xcassets */,
 				1CCDDC42287ED9FE00521785 /* LaunchScreen.storyboard */,
-				1CCDDC45287ED9FE00521785 /* Info.plist */,
+				1CCDDC52287F0F8C00521785 /* FontAwesomeTableViewCell.xib */,
 			);
-			path = "FontAwesome-UIKit";
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +160,7 @@
 				1CCDDC41287ED9FE00521785 /* Assets.xcassets in Resources */,
 				1CCDDC4C287EDA1000521785 /* FontAwesome.otf in Resources */,
 				1CCDDC3F287ED9FC00521785 /* Main.storyboard in Resources */,
+				1CCDDC54287F0F8C00521785 /* FontAwesomeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CCDDC5E287FC34800521785 /* icons.swift in Sources */,
+				1CCDDC53287F0F8C00521785 /* FontAwesomeTableViewCell.swift in Sources */,
 				1CCDDC3C287ED9FC00521785 /* ViewController.swift in Sources */,
+				1CCDDC5C287FC32A00521785 /* String+.swift in Sources */,
 				1CCDDC38287ED9FC00521785 /* AppDelegate.swift in Sources */,
 				1CCDDC3A287ED9FC00521785 /* SceneDelegate.swift in Sources */,
 			);
@@ -293,7 +325,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69BMRJXU5B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "FontAwesome-UIKit/Info.plist";
+				INFOPLIST_FILE = "FontAwesome-UIKit/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69BMRJXU5B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "FontAwesome-UIKit/Info.plist";
+				INFOPLIST_FILE = "FontAwesome-UIKit/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

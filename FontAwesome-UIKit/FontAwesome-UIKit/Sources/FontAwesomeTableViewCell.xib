@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FontAwesomeTableViewCell" id="KGk-i7-Jjw" customClass="FontAwesomeTableViewCell" customModule="FontAwesome_UIKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="icon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPC-1R-dkk">
+                        <rect key="frame" x="20" y="10" width="40" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="UJI-89-0YF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIq-K0-uq0">
+                        <rect key="frame" x="60" y="10" width="53" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="unicode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYz-J7-Gmc">
+                        <rect key="frame" x="239" y="12" width="61" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SYz-J7-Gmc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6lk-24-OvU"/>
+                    <constraint firstItem="CIq-K0-uq0" firstAttribute="leading" secondItem="TPC-1R-dkk" secondAttribute="trailing" id="Kko-Ak-82P"/>
+                    <constraint firstItem="TPC-1R-dkk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="NVP-Wv-03d"/>
+                    <constraint firstAttribute="trailing" secondItem="SYz-J7-Gmc" secondAttribute="trailing" constant="20" id="YCv-Ge-2kg"/>
+                    <constraint firstItem="TPC-1R-dkk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aGd-f0-7kv"/>
+                    <constraint firstItem="CIq-K0-uq0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gkk-ag-3br"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="iconLabel" destination="TPC-1R-dkk" id="U5h-eF-IOb"/>
+                <outlet property="nameLabel" destination="CIq-K0-uq0" id="xCQ-Ph-1Nm"/>
+                <outlet property="unicodeLabel" destination="SYz-J7-Gmc" id="8DG-pH-wJa"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="66"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
