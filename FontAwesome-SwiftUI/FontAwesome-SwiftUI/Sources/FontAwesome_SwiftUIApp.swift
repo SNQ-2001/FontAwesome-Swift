@@ -2,7 +2,7 @@
 //  FontAwesome_SwiftUIApp.swift
 //  FontAwesome-SwiftUI
 //
-//  Created by 宮本大新 on 2022/07/13.
+//  Created by MIYAMOTO TAISHIN on 2022/07/14.
 //
 
 import SwiftUI
